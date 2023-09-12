@@ -310,3 +310,82 @@ input[type="range"]::-webkit-slider-thumb:hover {
 .theme-2 .equal:hover {
   background: #ff8a38;
 }
+
+/* here i styled a purple calulator */
+
+.theme-3 {
+  background: #17062a;
+}
+
+.theme-3 .number-result {
+  background: #1e0936;
+  color: #ffe53d;
+}
+
+.theme-3 .calc {
+  color: #ffe53d;
+}
+
+.theme-3 .theme {
+  color: #ffe53d;
+}
+
+.theme-3 .num {
+  color: #ffe53d;
+}
+
+.theme-3 input[type="range"] {
+  background: #1e0936;
+}
+
+.theme-3 input[type="range"]::-webkit-slider-thumb {
+  background: var(--thumb-background-color, #00ded0);
+}
+
+.theme-3 input[type="range"]::-webkit-slider-thumb:hover {
+  background: #93fff8;
+}
+
+.theme-3 .number-btn-section {
+  background: #1e0936;
+}
+
+.theme-3 .number {
+  color: #ffe53d;
+  background: #331c4d;
+  box-shadow: 0px -4px 0px 0px #881c9e inset;
+}
+
+.theme-3 .number:hover {
+  background: #6c34ac;
+}
+
+.theme-3 .del {
+  background: #56077c;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+  color: #fff;
+}
+
+.theme-3 .del:hover {
+  background: #8631af;
+}
+
+.theme-3 .reset-btn {
+  background: #56077c;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+  color: #fff;
+}
+
+.theme-3 .reset-btn:hover {
+  background: #8631af;
+}
+
+.theme-3 .equal {
+  background: #00ded0;
+  box-shadow: 0px -4px 0px 0px #6cf9f1 inset;
+  color: #1a2327;
+}
+
+.theme-3 .equal:hover {
+  background: #93fff8;
+}
