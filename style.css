@@ -69,7 +69,7 @@ body {
 }
 
 input[type="range"] {
-  -webkit-appearance: none;
+  appearance: none;
   width: 71px;
   height: 26px;
   background: #242d44;
@@ -84,6 +84,7 @@ input[type="range"] {
 }
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
+  appearance: none;
   width: 16px;
   height: 16px;
   background: var(--thumb-background-color, #d03f2f);
