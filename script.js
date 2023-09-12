@@ -4,7 +4,7 @@ const rangeInput = document.getElementById("rangeInput");
 const numberResult = document.querySelector(".number-result");
 const number = document.querySelectorAll(".number");
 const body = document.body;
-
+let resultOfNumber = "";
 
 rangeInput.addEventListener("input", (event) => {
   if (event.target.value === "1") {
@@ -24,6 +24,7 @@ rangeInput.addEventListener("input", (event) => {
 number.forEach((element) => {
   element.addEventListener("click", () => {
     const buttonText = element.textContent;
-    numberResult.textContent = buttonText;
+    resultOfNumber += buttonText;
+    numberResult.textContent = resultOfNumber;
   });
 });
