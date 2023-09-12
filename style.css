@@ -4,10 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #3a4663;
 }
 
 body {
+  background: #3a4663;
   font-family: "League Spartan", sans-serif;
   display: flex;
   flex-direction: column;
@@ -230,4 +230,83 @@ input[type="range"]::-webkit-slider-thumb:hover {
     height: 64px;
     font-size: 28px;
   }
+}
+
+/* here i made a new calculator style */
+
+.theme-2 {
+  background: #e6e6e6;
+}
+
+.theme-2 .number-result {
+  background: #eee;
+  color: #36362c;
+}
+
+.theme-2 .calc {
+  color: #36362c;
+}
+
+.theme-2 .theme {
+  color: #36362c;
+}
+
+.theme-2 .num {
+  color: #36362c;
+}
+
+.theme-2 input[type="range"] {
+  background: #d2cdcd;
+}
+
+.theme-2 input[type="range"]::-webkit-slider-thumb {
+  background: var(--thumb-background-color, #c85402);
+}
+
+.theme-2 input[type="range"]::-webkit-slider-thumb:hover {
+  background: #ff8a38;
+}
+
+.theme-2 .number-btn-section {
+  background: #d2cdcd;
+}
+
+.theme-2 .number {
+  background: #e5e4e1;
+  box-shadow: 0px -4px 0px 0px #a79e91 inset;
+  color: #36362c;
+}
+
+.theme-2 .number:hover {
+  background: #fff;
+}
+
+.theme-2 .del {
+  background: #378187;
+  box-shadow: 0px -4px 0px 0px #1b6066 inset;
+  color: #fff;
+}
+
+.theme-2 .del:hover {
+  background: #62b5bc;
+}
+
+.theme-2 .reset-btn {
+  background: #378187;
+  box-shadow: 0px -4px 0px 0px #1b6066 inset;
+  color: #fff;
+}
+
+.theme-2 .reset-btn:hover {
+  background: #62b5bc;
+}
+
+.theme-2 .equal {
+  background: #c85402;
+  box-shadow: 0px -4px 0px 0px #873901 inset;
+  color: #fff;
+}
+
+.theme-2 .equal:hover {
+  background: #ff8a38;
 }
