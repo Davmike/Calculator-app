@@ -46,4 +46,12 @@ equal.addEventListener("click", () => {
 del.addEventListener("click", () => {
   resultOfNumber = resultOfNumber.slice(0, -1);
   numberResult.textContent = resultOfNumber;
+  if (resultOfNumber === "") {
+    numberResult.textContent = 0;
+  }
+});
+
+resetBtn.addEventListener("click", () => {
+  resultOfNumber = "";
+  numberResult.textContent = 0;
 });
