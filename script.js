@@ -31,6 +31,11 @@ number.forEach((element) => {
     console.log(resultOfNumber);
     if (resultOfNumber.length <= 13) {
       const buttonText = element.textContent;
+      // if (buttonText === "x") {
+      //   resultOfNumber += "*";
+      // } else {
+      //   resultOfNumber += buttonText;
+      // }
       resultOfNumber += buttonText;
       numberResult.textContent = resultOfNumber;
     }
@@ -38,6 +43,7 @@ number.forEach((element) => {
 });
 
 equal.addEventListener("click", () => {
+  resultOfNumber = resultOfNumber.replace("x", "*");
   const resultNum = eval(resultOfNumber);
   resultOfNumber = resultNum.toString();
   numberResult.textContent = resultNum;
