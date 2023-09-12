@@ -4,6 +4,11 @@ const rangeInput = document.getElementById("rangeInput");
 const numberResult = document.querySelector(".number-result");
 const number = document.querySelectorAll(".number");
 const body = document.body;
+
+const equal = document.querySelector(".equal");
+const resetBtn = document.querySelector(".reset-btn");
+const del = document.querySelector(".del");
+
 let resultOfNumber = "";
 
 rangeInput.addEventListener("input", (event) => {
@@ -23,8 +28,22 @@ rangeInput.addEventListener("input", (event) => {
 
 number.forEach((element) => {
   element.addEventListener("click", () => {
-    const buttonText = element.textContent;
-    resultOfNumber += buttonText;
-    numberResult.textContent = resultOfNumber;
+    console.log(resultOfNumber);
+    if (resultOfNumber.length <= 13) {
+      const buttonText = element.textContent;
+      resultOfNumber += buttonText;
+      numberResult.textContent = resultOfNumber;
+    }
   });
+});
+
+equal.addEventListener("click", () => {
+  const resultNum = eval(resultOfNumber);
+  resultOfNumber = resultNum.toString();
+  numberResult.textContent = resultNum;
+});
+
+del.addEventListener("click", () => {
+  resultOfNumber = resultOfNumber.slice(0, -1);
+  numberResult.textContent = resultOfNumber;
 });
