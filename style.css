@@ -232,6 +232,10 @@ input[type="range"]::-webkit-slider-thumb:hover {
     font-size: 40px;
   }
 
+  .del {
+    width: 101px;
+  }
+
   .reset-btn,
   .equal {
     width: 227px;
